@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/forecast/data-access",
+  "sourceRoot": "libs/forecast/data-access/src",
+  "prefix": "forecast",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/forecast/data-access"],
+      "options": {
+        "jestConfig": "libs/forecast/data-access/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/forecast/data-access/src/**/*.ts",
+          "libs/forecast/data-access/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:forecast", "type:data-access"]
+}

@@ -2,8 +2,10 @@
   "version": 2,
   "projects": {
     "forecast": "apps/forecast",
+    "forecast-data-access": "libs/forecast/data-access",
     "forecast-e2e": "apps/forecast-e2e",
     "weather": "apps/weather",
+    "weather-api": "apps/weather-api",
     "weather-e2e": "apps/weather-e2e"
   },
   "cli": {
