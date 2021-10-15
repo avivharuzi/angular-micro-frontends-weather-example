@@ -27,7 +27,7 @@ sharedMappings.register(
 
 module.exports = {
   output: {
-    uniqueName: 'weather',
+    uniqueName: 'forecast',
     publicPath: 'auto',
   },
   optimization: {
@@ -41,8 +41,10 @@ module.exports = {
   },
   plugins: [
     new ModuleFederationPlugin({
-      remotes: {
-        forecast: 'forecast@http://localhost:4201/remoteEntry.js',
+      name: 'forecast',
+      filename: 'remoteEntry.js',
+      exposes: {
+        './Module': 'apps/forecast/src/app/remote-entry/entry.module.ts',
       },
       shared: {
         '@angular/core': { singleton: true, strictVersion: true },
