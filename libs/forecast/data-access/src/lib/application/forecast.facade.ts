@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { Observable } from 'rxjs';
 
-import { Forecast } from './../entities';
+import { Forecast } from '../entities';
 import { ForecastQuery } from '../+state/forecast.query';
 import { ForecastService } from '../infrastructure/forecast.service';
 import { ForecastStore } from '../+state/forecast.store';
@@ -28,7 +28,8 @@ export class ForecastFacade {
         this.forecastStore.update({ forecast });
       },
       () => {
-        this.forecastStore.setError('Not found city.');
+        this.forecastStore.update({ forecast: null });
+        this.forecastStore.setError('Not found city, try different one.');
       }
     );
   }

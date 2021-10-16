@@ -17,6 +17,18 @@
     "paths": {
       "@angular-micro-frontends-weather-example/forecast/data-access": [
         "libs/forecast/data-access/src/index.ts"
+      ],
+      "@angular-micro-frontends-weather-example/forecast/feature-main": [
+        "libs/forecast/feature-main/src/index.ts"
+      ],
+      "@angular-micro-frontends-weather-example/forecast/ui-card-item": [
+        "libs/forecast/ui-card-item/src/index.ts"
+      ],
+      "@angular-micro-frontends-weather-example/shared/ui-alert": [
+        "libs/shared/ui-alert/src/index.ts"
+      ],
+      "@angular-micro-frontends-weather-example/weather/ui-search": [
+        "libs/weather/ui-search/src/index.ts"
       ]
     }
   },

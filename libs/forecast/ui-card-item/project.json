@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/forecast/ui-card-item",
+  "sourceRoot": "libs/forecast/ui-card-item/src",
+  "prefix": "forecast",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/forecast/ui-card-item"],
+      "options": {
+        "jestConfig": "libs/forecast/ui-card-item/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/forecast/ui-card-item/src/**/*.ts",
+          "libs/forecast/ui-card-item/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:forecast", "type:ui"]
+}

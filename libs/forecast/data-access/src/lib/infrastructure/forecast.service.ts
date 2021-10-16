@@ -8,7 +8,7 @@ import { Forecast } from './../entities';
   providedIn: 'root',
 })
 export class ForecastService {
-  private readonly BASE_API_URL: string = '/weather/forecast';
+  private readonly BASE_API_URL: string = '/api/weather/forecast';
 
   constructor(private httpClient: HttpClient) {}
 

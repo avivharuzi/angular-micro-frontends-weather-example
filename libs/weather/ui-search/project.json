@@ -1,0 +1,26 @@
+{
+  "projectType": "library",
+  "root": "libs/weather/ui-search",
+  "sourceRoot": "libs/weather/ui-search/src",
+  "prefix": "weather",
+  "targets": {
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "outputs": ["coverage/libs/weather/ui-search"],
+      "options": {
+        "jestConfig": "libs/weather/ui-search/jest.config.js",
+        "passWithNoTests": true
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "options": {
+        "lintFilePatterns": [
+          "libs/weather/ui-search/src/**/*.ts",
+          "libs/weather/ui-search/src/**/*.html"
+        ]
+      }
+    }
+  },
+  "tags": ["scope:weather", "type:ui"]
+}

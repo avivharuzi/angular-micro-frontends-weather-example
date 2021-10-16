@@ -4,9 +4,13 @@
     "forecast": "apps/forecast",
     "forecast-data-access": "libs/forecast/data-access",
     "forecast-e2e": "apps/forecast-e2e",
+    "forecast-feature-main": "libs/forecast/feature-main",
+    "forecast-ui-card-item": "libs/forecast/ui-card-item",
+    "shared-ui-alert": "libs/shared/ui-alert",
     "weather": "apps/weather",
     "weather-api": "apps/weather-api",
-    "weather-e2e": "apps/weather-e2e"
+    "weather-e2e": "apps/weather-e2e",
+    "weather-ui-search": "libs/weather/ui-search"
   },
   "cli": {
     "defaultCollection": "@nrwl/angular"

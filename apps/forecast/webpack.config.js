@@ -21,6 +21,8 @@ sharedMappings.register(
   tsConfigPath,
   [
     /* mapped paths to share */
+    '@angular-micro-frontends-weather-example/forecast/data-access',
+    '@angular-micro-frontends-weather-example/shared/ui-alert',
   ],
   workspaceRootPath
 );

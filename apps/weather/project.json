@@ -14,7 +14,15 @@
         "polyfills": "apps/weather/src/polyfills.ts",
         "tsConfig": "apps/weather/tsconfig.app.json",
         "inlineStyleLanguage": "scss",
-        "assets": ["apps/weather/src/favicon.ico", "apps/weather/src/assets"],
+        "assets": [
+          "apps/weather/src/favicon.ico",
+          "apps/weather/src/assets",
+          {
+            "input": "libs/shared/assets",
+            "glob": "*/**",
+            "output": "assets"
+          }
+        ],
         "styles": ["apps/weather/src/styles.scss"],
         "scripts": [],
         "customWebpackConfig": {
