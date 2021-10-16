@@ -28,7 +28,11 @@
     "prepare": "husky install",
     "postinstall": "ngcc --properties es2015 browser module main",
     "serve:weather": "nx run weather:serve-mfe",
-    "serve:weather-api": "nx serve weather-api"
+    "serve:weather-api": "nx serve weather-api",
+    "build:weather": "NODE_ENV=production nx build weather",
+    "build:forecast": "NODE_ENV=production nx build forecast",
+    "run:weather": "http-server --cors -p 4200 -c-1 dist/apps/weather --proxy http://localhost:4200?",
+    "run:forecast": "http-server --cors -p 4201 -c-1 dist/apps/forecast --proxy http://localhost:4201?"
   },
   "private": true,
   "dependencies": {
@@ -85,6 +89,7 @@
     "eslint-config-prettier": "8.1.0",
     "eslint-plugin-cypress": "^2.10.3",
     "git-cz": "^4.8.0",
+    "http-server": "^13.0.2",
     "husky": "^7.0.2",
     "jest": "27.2.3",
     "jest-preset-angular": "10.0.1",
