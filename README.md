@@ -2,6 +2,8 @@
 
 Weather web application using Angular and Nx with micro frontends.
 
+![Application MFE Screenshot](./.github/assets/app-mfe-screenshot.png)
+
 ## How to Run Locally
 
 ### Update environment variables
